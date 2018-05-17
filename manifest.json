@@ -1,0 +1,21 @@
+{
+  "name": "Github sidebar-move",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Move what's meant to be right on the right. Github sidebar here.",
+  "homepage_url": "http://tameesh.in",
+  "icons": {
+    
+  },
+  "default_locale": "en",
+  "permissions": [
+    "tabs",
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+  {
+    "matches": ["https://*.github.com/*"],
+    "js": ["js/github.js"]
+  }
+  ]
+}
